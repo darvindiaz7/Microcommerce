@@ -1,2 +1,5 @@
 PARA UTILIZAR EL SWAGGER:
 http://localhost:8082/swagger-ui.html
+
+PARA EJECUTAR EL COMPOSE
+docker compose -f .\compose.database.yml up –d
