@@ -13,35 +13,36 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import Usuarios.Model.RolesModel;
+import Usuarios.Routes.RolesRoutes;
 import Usuarios.Services.RolesService;
 
 @RestController
-@RequestMapping("roles")
+@RequestMapping(RolesRoutes.BASE)
 public class RolesController {
     @Autowired
     RolesService service;
 
-    @GetMapping("/all")
+    @GetMapping(RolesRoutes.ALL)
     public List<RolesModel> listar(){
         return (List<RolesModel>) service.findAll();
     }
 
-    @GetMapping("/get/{id}")
+    @GetMapping(RolesRoutes.GET_BY_ID)
     public RolesModel getById(@PathVariable Integer id){
         return service.fyndById(id);
     }
 
-    @PostMapping("/add")
+    @PostMapping(RolesRoutes.ADD)
     public RolesModel create(@RequestBody RolesModel model){
         return service.add(model);
     }
 
-    @PutMapping("/update")
+    @PutMapping(RolesRoutes.UPDATE)
     public RolesModel update(@RequestBody RolesModel model){
         return service.add(model);
     }
 
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping(RolesRoutes.DELETE)
     public String delete(@PathVariable int id){
         boolean deleted = service.delete(id);
         if (deleted) {
