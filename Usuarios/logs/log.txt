@@ -1,0 +1,25 @@
+2026-03-12T18:00:21.963-05:00  INFO 10421 --- [Usuarios] [main] Usuarios.UsuariosApplication             : Starting UsuariosApplication using Java 21.0.10 with PID 10421 (/home/darvindiaz/Documents/GIT/Microcommerce/Usuarios/target/classes started by darvindiaz in /home/darvindiaz/Documents/GIT/Microcommerce)
+2026-03-12T18:00:21.967-05:00  INFO 10421 --- [Usuarios] [main] Usuarios.UsuariosApplication             : No active profile set, falling back to 1 default profile: "default"
+2026-03-12T18:00:23.490-05:00  INFO 10421 --- [Usuarios] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-12T18:00:23.491-05:00  INFO 10421 --- [Usuarios] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-12T18:00:23.784-05:00  INFO 10421 --- [Usuarios] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-12T18:00:23.867-05:00  INFO 10421 --- [Usuarios] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-12T18:00:24.419-05:00  INFO 10421 --- [Usuarios] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-12T18:00:24.888-05:00  INFO 10421 --- [Usuarios] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@98712fa
+2026-03-12T18:00:24.891-05:00  INFO 10421 --- [Usuarios] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-12T18:00:24.996-05:00  INFO 10421 --- [Usuarios] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3307/db_usuarios]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.26
+	Default catalog/schema: db_usuarios/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-12T18:00:25.935-05:00  INFO 10421 --- [Usuarios] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-12T18:00:26.869-05:00  INFO 10421 --- [Usuarios] [main] Usuarios.UsuariosApplication             : Started UsuariosApplication in 5.526 seconds (process running for 6.153)
+2026-03-12T18:00:26.874-05:00  WARN 10421 --- [Usuarios] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-03-12T18:00:26.874-05:00  WARN 10421 --- [Usuarios] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
